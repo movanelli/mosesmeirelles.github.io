@@ -1,0 +1,173 @@
+@import url(http://fonts.googleapis.com/css?family=Cutive);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400italic);
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 470px) {
+    .name {
+        font-size: 6vw !important;
+    }
+
+    .name span {
+        width: 65vw !important;
+    }
+
+    .job {
+        font-size: 4.5vw !important;
+    }
+
+    .separator-job {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .container {
+        width: 400px !important;
+    }
+}
+
+body {
+    background: #2d2d2d;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.links {
+}
+
+.name {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+    margin: 0;
+    padding: 2px 0 0;
+    color: #ededed;
+    font-family: 'Cutive', serif;
+    font-size: 200%;
+    font-weight: 400;
+    text-align: left;
+    border-right: 6px solid #ededed;
+    -webkit-animation-name: blink-start, typing,blink-end;
+    -moz-animation-name: blink-start, typing, blink-end;
+    animation-name: blink-start, typing, blink-end;
+    -webkit-animation-duration: 1s, 1s, 1s;
+    -moz-animation-duration: 1s, 1s, 1s;
+    animation-duration: 1s, 1s, 1s;
+    -webkit-animation-timing-function: linear, steps(13, end), linear;
+    -moz-animation-timing-function: linear, steps(13, end), linear;
+    animation-timing-function: linear, steps(13, end), linear;
+    -webkit-animation-iteration-count: 1, 1, infinite;
+    -moz-animation-iteration-count: 1, 1, infinite;
+    animation-iteration-count: 1, 1, infinite;
+    -webkit-animation-delay: 0s, 1s, 2s;
+    -moz-animation-delay: 0s, 1s, 2s;
+    animation-delay: 0s, 1s, 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.name span {
+    display: block;
+    width: 400px;
+}
+
+.job {
+    display: block;
+    color: dodgerblue;
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 80%;
+    text-align: left;
+    width: 80%;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-moz-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes blink-start {
+  from, to {
+    border-color: #ededed;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+@-moz-keyframes blink-start {
+  from, to {
+    border-color: #ededed;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink-start {
+  from, to {
+    border-color: #ededed;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink-end {
+  from, to {
+    border-color: #ededed;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+@-moz-keyframes blink-end {
+  from, to {
+    border-color: #ededed;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink-end {
+  from, to {
+    border-color: #ededed;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
