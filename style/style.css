@@ -48,6 +48,20 @@ body {
     margin: 0 auto;
 }
 
+.description, .description a {
+    color: #ededed;
+    font-family: 'Cutive', serif;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.description span {
+    background-color: #ededed;
+    color: #2d2d2d;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
 .links {
     margin-top: 20px;
 }
