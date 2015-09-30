@@ -38,6 +38,23 @@ body {
     background: #2d2d2d;
 }
 
+.header-menu {
+    float: right;
+}
+
+.header-menu > ul li {
+    display: inline-block;
+    color: #757575;
+    font-family: "Cutive",serif;
+    font-size: 13px;
+    padding: 18px;
+}
+
+.header-menu > ul a:hover li,
+.header-menu > ul a:active li {
+    color: #1E90FF;
+}
+
 .container {
     position: absolute;
     top: 40%;
