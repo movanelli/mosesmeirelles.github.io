@@ -44,7 +44,7 @@ body {
 
 .header-menu > ul li {
     display: inline-block;
-    color: #757575;
+    color: #1E90FF;
     font-family: "Cutive",serif;
     font-size: 13px;
     padding: 18px;
@@ -52,7 +52,7 @@ body {
 
 .header-menu > ul a:hover li,
 .header-menu > ul a:active li {
-    color: #1E90FF;
+    color: #757575;
 }
 
 .container {
