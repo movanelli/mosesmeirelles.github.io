@@ -10,6 +10,24 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+    text-shadow: none;
+    background: #FFF;
+}
+::selection {
+    text-shadow: none;
+    background: #FFF;
+}
+img::selection {
+    background: 0 0
+}
+img::-moz-selection {
+    background: 0 0
+}
+body {
+    webkit-tap-highlight-color: #FFF;
+}
+
 @media only screen and (max-width: 470px) {
     .name {
         font-size: 6vw !important;
