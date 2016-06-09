@@ -6,7 +6,7 @@
 ****************************************************************************************************************
 1. revolution slider
 2. accrodion
-3. gallery fancybox activator 
+3. gallery fancybox activator
 4. select menu
 5. client carousel
 6. counter number changer
@@ -40,19 +40,19 @@ function revolutionSliderActiver () {
 		jQuery("#slider1").revolution({
 			sliderType:"standard",
 			sliderLayout:"auto",
-			delay:5000,
+			delay:2000,
 			navigation: {
-				arrows:{enable:true} 
-			}, 
+				arrows:{enable:true}
+			},
 			gridwidth:1170,
-			gridheight:915 
+			gridheight:915
 		});
 	};
 }
 // 2. accrodion
 function accrodion () {
 	if ($('.accrodion-grp').length) {
-		
+
 		$('.accrodion-grp').each(function () {
 			var accrodionName = $(this).data('grp-name');
 			var Self = $(this);
@@ -61,19 +61,19 @@ function accrodion () {
 			Self.find('.accrodion.active').find('.accrodion-content').show();
 			Self.find('.accrodion').each(function() {
 				$(this).find('.accrodion-title').on('click', function () {
-					if ($(this).parent().hasClass('active') === false ) {					
+					if ($(this).parent().hasClass('active') === false ) {
 						$('.accrodion-grp.'+accrodionName).find('.accrodion').removeClass('active');
 						$('.accrodion-grp.'+accrodionName).find('.accrodion').find('.accrodion-content').slideUp();
-						$(this).parent().addClass('active');					
-						$(this).parent().find('.accrodion-content').slideDown();	
+						$(this).parent().addClass('active');
+						$(this).parent().find('.accrodion-content').slideDown();
 					};
 				});
 			});
 		});
-		
+
 	};
 }
-// 3. gallery fancybox activator 
+// 3. gallery fancybox activator
 function GalleryFancyboxActivator () {
   var galleryFcb = $('.fancybox');
   if(galleryFcb.length){
@@ -154,7 +154,7 @@ function contactFormValidation () {
 					required: true
 				}
 			},
-			submitHandler: function (form) { 
+			submitHandler: function (form) {
 				// sending value with ajax request
 				$.post($(form).attr('action'), $(form).serialize(), function (response) {
 					$(form).parent('div').append(response);
@@ -169,17 +169,17 @@ function contactFormValidation () {
 }
 // 8. sticky header
 function stickyHeader () {
-	if ($('.stricky').length) {
-		var strickyScrollPos = 100;
-		if($(window).scrollTop() > strickyScrollPos) {
-			$('.stricky').removeClass('fadeIn animated');
-	      	$('.stricky').addClass('stricky-fixed fadeInDown animated');
-		}
-		else if($(this).scrollTop() <= strickyScrollPos) {
-			$('.stricky').removeClass('stricky-fixed fadeInDown animated');
-	      	$('.stricky').addClass('slideIn animated');
-		}
-	};
+	// if ($('.stricky').length) {
+	// 	var strickyScrollPos = 100;
+	// 	if($(window).scrollTop() > strickyScrollPos) {
+	// 		$('.stricky').removeClass('fadeIn animated');
+	//       	$('.stricky').addClass('stricky-fixed fadeInDown animated');
+	// 	}
+	// 	else if($(this).scrollTop() <= strickyScrollPos) {
+	// 		$('.stricky').removeClass('stricky-fixed fadeInDown animated');
+	//       	$('.stricky').addClass('slideIn animated');
+	// 	}
+	// };
 }
 // 9. gallery
 function fleetGallery () {
@@ -432,7 +432,7 @@ function singleProductCarousel () {
 				})
 				.on('changed.owl.carousel', function (e) {
 					if (!flag) {
-						flag = true;		
+						flag = true;
 						$sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
 						flag = false;
 					}
@@ -488,7 +488,7 @@ function mobileNavToggler () {
 			console.log('clicked');
 		});
 		$('.mainmenu-holder .nav-header .navigation li.dropdown').children('a').append(function () {
-			return '<button class="dropdown-expander"><i class="fa fa-bars"></i></button>';    			
+			return '<button class="dropdown-expander"><i class="fa fa-bars"></i></button>';
 		});
 		$('.mainmenu-holder .nav-header .navigation .dropdown-expander').on('click', function () {
 			var Self = $(this);
@@ -499,12 +499,12 @@ function mobileNavToggler () {
 }
 
 
-// instance of fuction while Document ready event	
+// instance of fuction while Document ready event
 jQuery(document).on('ready', function () {
 	(function ($) {
 		revolutionSliderActiver();
 		accrodion();
-		selectMenu();		
+		selectMenu();
 		CounterNumberChanger();
 		contactFormValidation();
 		gMap();
@@ -526,13 +526,13 @@ jQuery(document).on('ready', function () {
 jQuery(window).on('load', function () {
 	(function ($) {
 		clientCarousel();
-		galleryMasonaryLayout();		
+		galleryMasonaryLayout();
 		relatedClassCarousel();
 	})(jQuery);
 });
 
 // instance of fuction while Window Scroll event
-jQuery(window).on('scroll', function () {	
+jQuery(window).on('scroll', function () {
 	(function ($) {
 		stickyHeader();
 	})(jQuery);
