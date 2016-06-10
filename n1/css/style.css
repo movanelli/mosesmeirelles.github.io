@@ -1915,6 +1915,9 @@ h6 {
 .latest-news .ver-todas-as-noticias {
     margin-top: 20px;
 }
+.latest-news .row-lista-eventos {
+    margin-bottom: 20px;
+}
 .blog-page-content .single-blog-post {
   margin-bottom: 60px;
 }
