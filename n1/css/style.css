@@ -1896,7 +1896,8 @@ h6 {
   margin: 0;
   margin-bottom: 15px;
 }
-.latest-news .single-blog-post a.read-more {
+.latest-news .single-blog-post a.read-more,
+.latest-news .ver-todas-as-noticias a.read-more {
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
@@ -1906,9 +1907,13 @@ h6 {
   padding-bottom: 6px;
   transition: all 0.5s ease;
 }
-.latest-news .single-blog-post a.read-more:hover {
+.latest-news .single-blog-post a.read-more:hover,
+.latest-news .ver-todas-as-noticias a.read-more:hover {
   color: #d81f1f;
   border-color: #d81f1f;
+}
+.latest-news .ver-todas-as-noticias {
+    margin-top: 20px;
 }
 .blog-page-content .single-blog-post {
   margin-bottom: 60px;
