@@ -330,28 +330,19 @@ h6 {
   background: #010101;
   margin: 0;
 }
-.header.stricky-fixed .top-info {
-  display: none;
-}
 .header.stricky-fixed .mainmenu-holder .nav-header > ul > li {
-  line-height: 89px;
+  line-height: 40px;
 }
 .header.stricky-fixed .mainmenu-holder .nav-footer > ul > li {
   padding-bottom: 27px;
 }
-.header.stricky-fixed .logo {
-    display: none;
-}
 .header .logo {
   line-height: 89px;
-  max-width: 130px;
+  max-width: 85px;
   padding: 5px;
 }
 .header .header-right {
   text-align: right;
-}
-.header .top-info {
-  margin-bottom: 11px;
 }
 .header .top-info ul,
 .header .top-info ul li {
@@ -535,6 +526,15 @@ h6 {
   width: 30px;
   height: 40px;
   margin-right: 5px;
+}
+.header .mainmenu-holder .nav-header .navigation {
+    margin-top: 10px;
+}
+.header #seja-n1-button {
+    border: 2px solid #FFF;
+}
+.header #seja-n1-button:hover {
+    background-color: #FFF;
 }
 /* ==============================
    4. Slider styles
@@ -2309,8 +2309,8 @@ h6 {
   z-index: 99;
 }
 .top-call-to-action .container {
-  background: #FF3A3A;
-  padding: 27px 0;
+    background: #717171;
+    padding: 10px 10px 20px 10px;
 }
 .top-call-to-action .single-top-call-to-action {
   padding-left: 50px;
@@ -2353,11 +2353,16 @@ h6 {
   font-weight: normal;
   text-transform: uppercase;
 }
-.top-call-to-action .input-subscribe#seja-n1-input-call-to-action {
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 10px;
-    width: 60%;
+.top-call-to-action .call-to-action-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-family: "Oswald",sans-serif;
+    margin-bottom: 10px;
+}
+.top-call-to-action .img-centered {
+    margin: 0 auto
 }
 /* ==============================
    16. Inner Banner  styles
