@@ -1401,7 +1401,7 @@ h6 {
    ============================== */
 .our-trainer {
   position: relative;
-  background: #13191d url(../img/resources/our-trainer-bg.jpg) center center no-repeat;
+  background: #13191d url(../img/unidades/UNIDADES.jpg) center center no-repeat;
   background-size: cover;
 }
 .our-trainer:before {
@@ -2130,7 +2130,7 @@ h6 {
    ============================== */
 .footer {
   position: relative;
-  background: #13191d url(../img/resources/footer-bg.jpg) center center no-repeat;
+  background: #13191d url(../img/modalidades/boxe.jpg) center center no-repeat;
   background-size: cover;
   padding-top: 100px;
 }
@@ -2371,6 +2371,9 @@ h6 {
 }
 .top-call-to-action .img-centered {
     margin: 0 auto
+}
+.top-call-to-action .img-responsive.img-centered {
+    max-height: 130px;
 }
 /* ==============================
    16. Inner Banner  styles
