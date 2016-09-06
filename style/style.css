@@ -12,11 +12,11 @@
 
 ::-moz-selection {
     text-shadow: none;
-    background: #FFF;
+    background: #2078ce;
 }
 ::selection {
     text-shadow: none;
-    background: #FFF;
+    background: #2078ce;
 }
 img::selection {
     background: 0 0
@@ -25,7 +25,7 @@ img::-moz-selection {
     background: 0 0
 }
 body {
-    webkit-tap-highlight-color: #FFF;
+    webkit-tap-highlight-color: #2078ce;
 }
 
 @media only screen and (max-width: 470px) {
@@ -53,15 +53,19 @@ body {
 }
 
 body {
-    background: #2d2d2d;
+    background: #ededed;
 }
 
 .header-menu {
     float: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .header-menu > ul li {
     display: inline-block;
+    float: right;
     color: #1E90FF;
     font-family: "Cutive",serif;
     font-size: 13px;
@@ -83,18 +87,12 @@ body {
     margin: 0 auto;
 }
 
-.description, .description a {
-    color: #ededed;
-    font-family: 'Cutive', serif;
-    font-size: 14px;
-    margin-top: 25px;
-}
-
-.description span {
-    background-color: #ededed;
-    color: #2d2d2d;
-    font-weight: bold;
-    padding: 0px 5px;
+.content {
+    margin: 0 auto;
+    margin-top: 100vh;
+    margin-bottom: 10vh;
+    width: 40vw;
+    word-wrap: break-word;
 }
 
 .links {
@@ -108,7 +106,7 @@ body {
     width: 0;
     margin: 0;
     padding: 2px 0 0;
-    color: #ededed;
+    color: dodgerblue;
     font-family: 'Cutive', serif;
     font-size: 200%;
     font-weight: 400;
@@ -141,7 +139,7 @@ body {
 
 .job {
     display: block;
-    color: dodgerblue;
+    color: #2d2d2d;
     font-family: 'Droid Serif', serif;
     font-style: italic;
     font-size: 80%;
@@ -175,7 +173,7 @@ body {
 }
 @-webkit-keyframes blink-start {
   from, to {
-    border-color: #ededed;
+    border-color: #2d2d2d;
   }
   50% {
     border-color: transparent;
@@ -183,7 +181,7 @@ body {
 }
 @-moz-keyframes blink-start {
   from, to {
-    border-color: #ededed;
+    border-color: #2d2d2d;
   }
   50% {
     border-color: transparent;
@@ -191,7 +189,7 @@ body {
 }
 @keyframes blink-start {
   from, to {
-    border-color: #ededed;
+    border-color: #2d2d2d;
   }
   50% {
     border-color: transparent;
@@ -199,7 +197,7 @@ body {
 }
 @-webkit-keyframes blink-end {
   from, to {
-    border-color: #ededed;
+    border-color: #2d2d2d;
   }
   50% {
     border-color: transparent;
@@ -207,7 +205,7 @@ body {
 }
 @-moz-keyframes blink-end {
   from, to {
-    border-color: #ededed;
+    border-color: #2d2d2d;
   }
   50% {
     border-color: transparent;
@@ -215,7 +213,7 @@ body {
 }
 @keyframes blink-end {
   from, to {
-    border-color: #ededed;
+    border-color: #2d2d2d;
   }
   50% {
     border-color: transparent;
