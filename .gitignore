@@ -1,2 +1,6 @@
+.env
+.idea
+.mshmeirelles
+*.sqlite3
+*pyc
 __pycache__
-.venv
