@@ -1,5 +1,8 @@
 # Website
 
+[![Build Status](https://travis-ci.org/mshmeirelles/mshmeirelles.me.svg?branch=master)](https://travis-ci.org/mshmeirelles/mshmeirelles.me)
+[![Code Health](https://landscape.io/github/mshmeirelles/mshmeirelles.me/master/landscape.svg?style=flat)](https://landscape.io/github/mshmeirelles/mshmeirelles.me/master)
+
 ## Como desenvolver?
 
 1. Clone o repositório.
