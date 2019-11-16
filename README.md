@@ -1,3 +1,3 @@
 # Website
 
-Assets for my own [website](http://moisesmeirelles.me)
+Assets for my own [website](http://mosesmeirelles.dev)
